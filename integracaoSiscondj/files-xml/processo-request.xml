@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<retornarProcessoPorNumero 
+	xmlns="processo.soap.integracaoSiscondj.tjrj.jus.br"
+	xsi:schemaLocation="processo.soap.integracaoSiscondj.tjrj.jus.br processo-schema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">	
+	<numeroProcesso>0707245-83.2012.1.11.0010</numeroProcesso>
+</retornarProcessoPorNumero>

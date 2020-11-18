@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="comarca.soap.integracaoSiscondj.tjrj.jus.br" 
+	xmlns:tns="comarca.soap.integracaoSiscondj.tjrj.jus.br" elementFormDefault="qualified">
+	
+	<xs:element name="retornarTodasComarcasRequest">
+		<xs:complexType>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="retornarTodasComarcasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:integer" name="codigoRetorno"/>
+        <xs:element name="listaComarcas" type="tns:Comarca" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="Comarca">
+  	<xs:sequence>
+  		<xs:element name="codigo" type="xs:int"/>
+		<xs:element name="instancia" type="xs:int"/>
+		<xs:element name="nome" type="xs:string"/>
+	</xs:sequence>
+  </xs:complexType>
+  
+</xs:schema>

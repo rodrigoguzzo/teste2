@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<retornarTodasComarcasRequest
+	xmlns="comarca.soap.integracaoSiscondj.tjrj.jus.br"
+	xsi:schemaLocation="comarca.soap.integracaoSiscondj.tjrj.jus.br comarca-schema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">		
+</retornarTodasComarcasRequest>

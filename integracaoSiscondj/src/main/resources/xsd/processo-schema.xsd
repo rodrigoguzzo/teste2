@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="processo.soap.integracaoSiscondj.tjrj.jus.br" 
+	xmlns:tns="processo.soap.integracaoSiscondj.tjrj.jus.br" elementFormDefault="qualified">
+	
+	<xs:element name="retornarProcessoPorNumeroRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="numeroProcesso" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="retornarProcessoPorNumeroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:integer" name="codigoRetorno"/>
+        <xs:element name="processos" type="tns:Processo"> </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="Processo">
+  	<xs:sequence>
+		<xs:element name="codigoComarca" type="xs:int"/>
+		<xs:element name="codigoServentia" type="xs:int"/>
+		<xs:element name="instancia" type="xs:int"/>
+		<xs:element name="numeroProcessoCNJ" type="xs:string" />
+		<xs:element name="numeroProcessoTribunal" type="xs:string"/>
+		<xs:element name="partes" type="tns:Parte" maxOccurs="unbounded" minOccurs="2" />
+	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="Parte">
+  	<xs:sequence>
+  		<xs:element name="cpfCnpj" type="xs:long"/>
+		<xs:element name="nome" type="xs:string"/>
+		<xs:element name="principal" type="xs:boolean"/>
+		<xs:element type="xs:string" name="tipoParte"/>
+		<xs:element type="xs:string" name="tipoPessoa"/>
+	</xs:sequence>
+  </xs:complexType>
+  
+</xs:schema>

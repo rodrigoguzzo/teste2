@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2020.11.16 às 07:08:11 PM AMST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="comarca.soap.integracaoSiscondj.tjrj.jus.br">
+    <schemaBindings map="false">
+      <package name="br.jus.tjrj.integracaosiscondj.soap.comarca"/>
+    </schemaBindings>
+    <bindings scd="tns:retornarTodasComarcasRequest">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.comarca.RetornarTodasComarcasRequest"/>
+    </bindings>
+    <bindings scd="tns:retornarTodasComarcasResponse">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.comarca.RetornarTodasComarcasResponse"/>
+    </bindings>
+    <bindings scd="~tns:Comarca">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.comarca.Comarca"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="processo.soap.integracaoSiscondj.tjrj.jus.br">
+    <schemaBindings map="false">
+      <package name="br.jus.tjrj.integracaosiscondj.soap.processo"/>
+    </schemaBindings>
+    <bindings scd="tns:retornarProcessoPorNumeroRequest">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.processo.RetornarProcessoPorNumeroRequest"/>
+    </bindings>
+    <bindings scd="tns:retornarProcessoPorNumeroResponse">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.processo.RetornarProcessoPorNumeroResponse"/>
+    </bindings>
+    <bindings scd="~tns:Processo">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.processo.Processo"/>
+    </bindings>
+    <bindings scd="~tns:Parte">
+      <class ref="br.jus.tjrj.integracaosiscondj.soap.processo.Parte"/>
+    </bindings>
+  </bindings>
+</bindings>
+

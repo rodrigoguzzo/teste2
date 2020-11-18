@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.2 
+Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2020.11.12 às 01:45:50 PM AMST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="processo.integracaoSiscondj.tjrj.jus.br">
+    <schemaBindings map="false">
+      <package name="br.jus.tjrj.integracaosiscondj.processo"/>
+    </schemaBindings>
+    <bindings scd="tns:retornarProcessoPorNumeroResponse">
+      <class ref="br.jus.tjrj.integracaosiscondj.processo.RetornarProcessoPorNumeroResponse"/>
+    </bindings>
+    <bindings scd="tns:retornarProcessoPorNumero">
+      <class ref="br.jus.tjrj.integracaosiscondj.processo.RetornarProcessoPorNumero"/>
+    </bindings>
+  </bindings>
+</bindings>
+

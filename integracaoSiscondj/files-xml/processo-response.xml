@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<retornarProcessoPorNumeroResponse 
+	xmlns="processo.soap.integracaoSiscondj.tjrj.jus.br"
+	xsi:schemaLocation="processo.soap.integracaoSiscondj.tjrj.jus.br processo-schema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">	
+<codigoRetorno>25</codigoRetorno> 
+<processos> 
+	<codigoComarca>10</codigoComarca>
+	<codigoServentia>22</codigoServentia>
+	<instancia>1</instancia>
+	<numeroProcessoCNJ>0707245-83.2012.1.11.0010</numeroProcessoCNJ>
+	<numeroProcessoTribunal>0707245-83.2012</numeroProcessoTribunal>
+	<partes>
+		<cpfCnpj>56838620197</cpfCnpj>
+		<nome>Fulana de Tal</nome>
+		<principal>true</principal>
+		<tipoParte>AUTOR</tipoParte>
+		<tipoPessoa>PESSOA_FISICA</tipoPessoa>
+	</partes>	
+	<partes>
+		<cpfCnpj>12094725098191</cpfCnpj>
+		<nome>Seguradora de Consórcios S/A</nome>
+		<principal>true</principal>
+		<tipoParte>REU</tipoParte>
+		<tipoPessoa>PESSOA_JURIDICA</tipoPessoa>
+	</partes>	
+</processos>
+</retornarProcessoPorNumeroResponse>
